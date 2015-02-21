@@ -41,7 +41,10 @@ def chinese_remainder(Moduli):
     return (total % N), N
 
 
-#Polynomial is a class for polynomials (surprise!). It is very basic.
+# Polynomial is a class for polynomials (surprise!). It is very basic.
+# The create a polynomial, pass it a dictionary with keys of each
+# power of x, and values of the coefficient of power of x. Example:
+# 3*x^4-2*x^3+x^2-1 would be coeffs = {4:3, 3:-2, 2:1, 0:-1}
 class Polynomial:
 
     def __init__(self, Codict):
@@ -115,6 +118,9 @@ def factor(N):
 
 # Returns a list of all integers x such that f(x) == 0 (mod z)
 # Accepts a dict of coefficients and a modulus.
+# Like with the Polynomial class, coeffs must be a dictionary
+# with the nth power of x as the keys, and coefficient of x^n as the value.
+# e.x.: 3*x^2-2*x+1, coeffs = { 2:3, 1:-2, 0:1 }
 # Solves a polynomial congruence for arbitrary numbers and polynomials.
 #
 # At some point I ran out of descriptive variable names. Guess where!
