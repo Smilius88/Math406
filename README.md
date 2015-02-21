@@ -1,7 +1,7 @@
 Welcome!
 -------
 
-This is code for MATH406, Spring 2015, Dr. Wisely Wong. If you're not in the class,
+This is code for MATH406, Spring 2015, Dr. Wiseley Wong. If you're not in the class,
 don't worry. I hope you'll find something interesting.
 
 There is currently only one module, math406. This contains implementations of
