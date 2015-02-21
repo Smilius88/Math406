@@ -6,7 +6,7 @@ def primes(limit):
         if isp[i]:
             Primes.append(i)
             for j in xrange(i+i, limit, i):
-                isp[j] = false
+                isp[j] = False
     return Primes
 
 
